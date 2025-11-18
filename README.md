@@ -9,6 +9,7 @@ This question theme is a modified version of [LimeSurvey-Card-Sorting-5x-6x](htt
 
 ## Installation:
 
+- **Theme Manager** - Download the latest [release](https://github.com/kaitumisuuringute-keskus/limesurvey-array-card-sorting-v6/releases/). Under your LS installations themes settings go to question themes and then upload & install the release zip file.
 - **Manual installation** - Extract the download and upload the *ArrayCardSort* folder to */pathToLimeSurvey/upload/themes/question/*.
 
 ## Use
