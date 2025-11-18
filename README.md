@@ -4,7 +4,7 @@
 
 ![Image Card Sorting](/img/array-card-sort.png)
 
-This question theme is a modified version of [LimeSurvey-Card-Sorting-5x-6x](https://github.com/tpartner/LimeSurvey-Card-Sorting-5x-6x/). The original used multiple short texts under the hood instead of arrays, which can cause issues with localization and increases data use unnecessarily. This optimized port aims to allow the use of arrays to allow better data management and localization.
+This question theme is a modified version of [LimeSurvey-Card-Sorting-5x-6x](https://github.com/tpartner/LimeSurvey-Card-Sorting-5x-6x/). The question theme uses arrays instead of multiple short texts under the hood, which improves ease of localization, data standardisation and DB usage. 
 
 
 ## Installation:
