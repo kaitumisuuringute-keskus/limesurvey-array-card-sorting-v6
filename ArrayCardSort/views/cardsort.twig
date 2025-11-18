@@ -1,0 +1,14 @@
+{% set answersRaw = aRows|first  %}
+{% set answers = answersRaw.content.aAnswerColumns %}
+
+<div class="card-sort-outer-wrapper">
+    <div class="droppable items-start"></div>
+    <div class="items-end-wrapper">
+    {% for answer in answers %}
+        <div class="items-end-inner">
+            <div class="items-end-text">{{answer.label}}</div>
+            <div class="droppable items-end items-end-{{index+1}}" data-items-end="{{answer.code}}"></div>
+        </div>
+    {% endfor %}
+    </div>
+</div>

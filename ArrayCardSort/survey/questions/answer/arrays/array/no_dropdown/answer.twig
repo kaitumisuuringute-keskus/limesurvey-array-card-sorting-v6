@@ -1,0 +1,22 @@
+
+<!-- Card Sort Interface -->
+{% set cardSortView = './views/cardsort.twig' %}
+{{ include(cardSortView) }}
+<!-- End of Card Sort Interface -->
+
+<!-- answer -->
+<ul class="{{ coreClass }} list-unstyled form-horizontal card-sort-list" role="group" aria-labelledby="ls-question-text-{{ basename }}">
+    {% if aRows is empty %}
+        {% include 'survey/questions/answer/arrays/array/no_dropdown/empty.twig' %}
+    {% else %}
+        {% for aRow in aRows %}
+            {% set rowTemplate = ('survey/questions/answer/arrays/array/no_dropdown/answer_card.twig') %}
+            {% include rowTemplate with aRow.content only %}
+        {% endfor %}
+    {% endif %}
+</ul>
+<!-- end of answer -->
+
+{{ registerPackage('jqueryui') }}
+{{ registerPackage('jquery-touch-punch') }}
+

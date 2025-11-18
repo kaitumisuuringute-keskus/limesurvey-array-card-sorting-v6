@@ -1,0 +1,16 @@
+
+<!--answer_card -->
+<li id="javatbd{{ myfname }}" class="question-item answer-item text-item form-group{% if alert %} ls-error-mandatory has-error{% endif %}{{ extraclass }}" {{ sDisplayStyle }} >
+    <label class="control-label col-xs-12 col-sm-{{ answerwidth }}{% if answerwidth == 0 %} hidden{% endif %}" for="answer{{ myfname }}">
+        {{ processString(answertext) }}
+    </label>
+    <div class="col-xs-12 col-sm-{{ answerwidth }}">
+        <input
+            type="hidden"
+            name="{{ myfname }}"
+            id="answer{{ myfname }}"
+            value="{{ value }}"
+        />
+    </div>
+</li>
+<!-- end of answer_card -->
